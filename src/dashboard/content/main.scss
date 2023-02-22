@@ -1,0 +1,38 @@
+.main-section {
+    background-color: #BFB8AD;
+    padding-bottom: 10px;
+    button {
+        cursor: pointer;
+    }
+}
+
+.first-section {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 600;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    span {
+        font-size: small;
+    }
+}
+
+.first-section .first-left {
+    line-height: 1.5rem;
+    padding: 10px;
+    span {
+        margin-left: 15px;
+    }
+}
+
+.first-right {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+    button {
+        width: 10rem;
+        height: 2.5rem;
+        border-radius: 5px;
+    }
+}

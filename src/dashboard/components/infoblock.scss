@@ -1,0 +1,60 @@
+.block-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.blocks {
+    display: flex;
+}
+
+.single-block {
+    width: 100%;
+    max-width: 25%;
+    background-color: var(--bg-color);
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0px 10px;
+    height: 8rem;
+    background-color: var(--bg-soft);
+    color: var(--primary-color);
+}
+
+.progress {
+    width: 80%;
+    position: relative;
+}
+
+.percentage {
+    position: absolute;
+    font-size: small;
+    bottom: 1px;
+    right: -30px;
+}
+
+.fig {
+    position: relative;
+    font-weight: 600;
+    span {
+        font-weight: 500;
+        font-size: small;
+    }
+}
+
+.block-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+}
+
+.info-graph {
+    display: flex;
+    .pie-graph {
+        background-color: var(--bg-color);
+        border-radius: 10px;
+        margin: 10px;
+        width: 100%;
+        max-width: 33%;
+    }
+}

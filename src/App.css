@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+    --primary-color: #4D455D;
+    --secondary-color: #D8D9CF;
+    --bg-color: #FFFFFF;
+    --bg-soft: #FAFAFF;
+    --border: #FFF8F0;
+    --btn-primary: #003F91;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.light-theme {
+    --primary-color: #4D455D;
+    --secondary-color: #D8D9CF;
+    --bg-color: #FFFFFF;
+    --bg-soft: #FAFAFF;
+    --border: #FFF8F0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dark-theme {
+    --primary-color: #D8D9CF;
+    --secondary-color: #4D455D;
+    --bg-color: #564E58;
+    --bg-soft: #BFB5AF;
+    --border: #69747C;
 }
 
-.App-link {
-  color: #61dafb;
+.layout-section {
+    display: flex;
+    border: 2px solid gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sideNav-section {
+    display: flex;
+    flex: 2;
+    border: 2px solid gray;
+    width: 100%;
+    max-width: 15%;
+    height: 100vh;
 }
+
+.db-section {
+    display: flex;
+    flex-direction: column;
+    flex: 8;
+    width: 100%;
+    max-width: 85%;
+    height: 100vh;
+    border: 2px solid gray;
+}
+
+
+/* media-queries */
+
+@media (min-width: 300px) and (max-width: 765px) {
+    .sideNav-section {
+        display: none;
+    }
+    .db-section {
+        width: 100%;
+        max-width: 100%;
+        gap: 10px;
+    }
+    .nav-section {
+        padding: -15px !important;
+        height: 100px !important;
+        border: none !important;
+    }
+    .nav-section>.nav-left {
+        display: flex;
+        width: 100%;
+        max-width: 50%;
+        justify-content: space-evenly;
+    }
+    .first-section {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 0;
+        width: 100%;
+        padding-left: 10px;
+    }
+    .first-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: start;
+        width: 100%;
+    }
+    .first-right>button {
+        margin: 10px 0px;
+        cursor: pointer;
+    }
+    .block-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .single-block {
+        width: 100%;
+        max-width: 95% !important;
+        margin: 10px !important;
+        height: 8rem;
+        background-color: var(--bg-soft);
+        color: var(--primary-color);
+    }
+    .blocks {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-section {
+        height: max-content;
+        overflow: scroll;
+    }
+    .info-graph {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .pie-graph {
+        width: 100%;
+        max-width: 95% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .perf-table {
+        width: 100%;
+        max-width: 95% !important;
+        background-color: var(--bg-soft);
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+    .perf-table>table {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .perf-table>table>tbody>tr>td {
+        font-size: 0.6rem;
+    }
+    .perf-title {
+        width: 100%;
+        max-width: 80% !important;
+    }
+    .feeds-sec {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        gap: 10px;
+    }
+    .perf-task {
+        width: 100%;
+        max-width: 95% !important;
+        margin-top: 10px;
+    }
+}
+
+
+/* end media-queries */

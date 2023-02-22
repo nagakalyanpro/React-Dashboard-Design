@@ -1,0 +1,28 @@
+.nav-section {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    display: flex;
+    border: 1px solid gray;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    z-index: 20;
+}
+
+.nav-left {
+    display: flex;
+    width: 100%;
+    max-width: 30%;
+    justify-content: space-evenly;
+}
+
+.user-icon {
+    width: 1.5rem;
+    font-size: larger;
+    margin-right: 20px;
+}

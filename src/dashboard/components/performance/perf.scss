@@ -1,0 +1,69 @@
+.perf-table {
+    border: 1px solid gray;
+    background-color: var(--bg-soft);
+    width: 100%;
+    max-width: 60%;
+    border-radius: 10px;
+    margin-left: 10px;
+    table {
+        width: 100%;
+        border: 1px solid gray;
+        tbody>tr>td {
+            text-align: center;
+            border: 1px solid var(--primary-color);
+        }
+        tr:nth-child(even) {
+            background-color: #6B6D76;
+        }
+    }
+    .perf-title {
+        font-size: large;
+        font-weight: 600;
+        padding: 10px;
+        width: 100%;
+        max-width: 30%;
+        line-height: 20px;
+        span {
+            font-size: x-small;
+            font-weight: 500;
+            margin-top: -20px;
+        }
+    }
+}
+
+.feeds-sec {
+    display: flex;
+}
+
+.perf-task {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    background-color: var(--bg-soft);
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 0px 10px;
+    .perf-title {
+        font-size: large;
+        font-weight: 600;
+        padding: 10px;
+        width: 100%;
+        max-width: 30%;
+        line-height: 20px;
+        span {
+            font-size: x-small;
+            font-weight: 500;
+            margin-top: -20px;
+        }
+    }
+    .inp-label {
+        display: flex;
+        flex-direction: column;
+    }
+    .inp-label>label>input {
+        padding: 10px;
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+}
